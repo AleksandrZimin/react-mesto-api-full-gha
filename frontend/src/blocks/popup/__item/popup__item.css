@@ -1,0 +1,15 @@
+.popup__item {
+   max-width: 75vw;
+   max-height: 75vh;
+   object-fit: contain;
+   object-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+   .popup__item {
+      height:min-content;
+   }
+}

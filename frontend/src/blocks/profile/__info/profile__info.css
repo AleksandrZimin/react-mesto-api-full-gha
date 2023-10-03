@@ -1,0 +1,21 @@
+.profile__info {
+   display: grid;
+   justify-items:stretch;
+   align-items: center;
+   align-content: center;
+   justify-content: start;
+   gap: 4px 20px;
+   grid-template: 
+       "name button" auto
+       "job job" auto
+       /max-content min-content;
+}
+
+@media screen and (max-width: 700px) {
+   .profile__info {
+      padding: 27px 0 34px 0;
+      width: 100%;
+      justify-content: center;
+      gap: 6px 10px;
+   }
+}

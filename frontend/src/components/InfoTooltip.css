@@ -1,0 +1,31 @@
+.popup__infoTooltip {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.popup__img {
+   width: 120px;
+height: 120px;
+   margin-bottom: 34px;
+
+}
+
+.popup__text {
+   color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin-bottom: 24px;
+}
+
+.popup__position {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
