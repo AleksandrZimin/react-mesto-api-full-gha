@@ -105,7 +105,7 @@ module.exports.updateUser = (req, res, next) => {
       { name, about },
       { new: true, runValidators: true },
     )
-    .then((user) => {res.send(user); console.log(user)})
+    .then((user) => { res.send(user); console.log(user); })
     .catch((err) => {
       if (err instanceof mongoose.Error.ValidationError) {
         return next(new BadRequest('Переданы некорректные данные'));

@@ -3,16 +3,12 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
-const auth = require('./middlewares/auth');
-// const router = require('./routes/auth');
-
 const { errors } = require('celebrate');
+const auth = require('./middlewares/auth');
+
 const errorHandler = require('./middlewares/error-handler');
 const NotFound = require('./errors/NotFound');
-const { requestLogger, errorLogger } = require('./middlewares/logger'); 
-// const handlerCors = require('./middlewares/cors-handler');
-
-// const { PORT, MONGO_URL } = require('./.env');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000 } = process.env;
 const app = express();
@@ -35,7 +31,7 @@ app.use(requestLogger);
 
 app.use(cors());
 
-app.use('/',  require('./routes/auth'));
+app.use('/', require('./routes/auth'));
 
 app.use(auth);
 
