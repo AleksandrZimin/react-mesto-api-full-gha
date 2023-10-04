@@ -11,8 +11,8 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.75.0
+IP 51.250.75.0
 
-Frontend https://...
+Frontend https://zimin.nomoredomainsrocks.ru
 
 Backend https://...

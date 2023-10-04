@@ -101,4 +101,4 @@ class Api {
   }
 }
 
-export default new Api("http://localhost:3000");
+export default new Api("https://api.zimin.nomoredomainsrocks.ru");
