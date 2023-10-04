@@ -15,4 +15,4 @@ IP 51.250.75.0
 
 Frontend https://zimin.nomoredomainsrocks.ru
 
-Backend https://...
+Backend https://api.zimin.nomoredomainsrocks.ru
