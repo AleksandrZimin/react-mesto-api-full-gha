@@ -11,9 +11,9 @@ const errorHandler = require('./middlewares/error-handler');
 const NotFound = require('./errors/NotFound');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { 
+const {
   PORT = 3000,
-  DATABASE_URL = 'mongodb://127.0.0.1:27017/mestodb'
+  DATABASE_URL = 'mongodb://127.0.0.1:27017/mestodb',
 } = process.env;
 
 const app = express();
