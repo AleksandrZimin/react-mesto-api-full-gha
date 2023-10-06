@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && scp -r ./build/* aleksandr@51.250.75.0:/home/aleksandr/react-mesto-api-full-gha/frontend/build"
   },
   "eslintConfig": {
     "extends": [
